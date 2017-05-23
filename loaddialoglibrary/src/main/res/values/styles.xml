@@ -1,0 +1,12 @@
+<resources>
+
+
+    <style name="loadingdialog_style">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowCloseOnTouchOutside">false</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:background">@drawable/corners_radio</item>
+
+    </style>
+
+</resources>
