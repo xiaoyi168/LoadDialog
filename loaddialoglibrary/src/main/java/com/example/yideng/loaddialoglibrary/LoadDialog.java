@@ -23,10 +23,10 @@ public class LoadDialog extends Dialog{
     private static   TextView mTextView;
 
     public LoadDialog(@NonNull Context context) {
-        super(context);
+        super(context,R.style.MyDialog);
         setContentView(R.layout.dialog);
-        Window window = getWindow();
-        window.setBackgroundDrawableResource(R.drawable.corners_radio);
+     /*   Window window = getWindow();
+        window.setBackgroundDrawableResource(R.drawable.corners_radio);*/
         ImageView img= (ImageView)findViewById(R.id.id_img);
         Rotate(img);
         mTextView = (TextView)findViewById(R.id.id_text);
