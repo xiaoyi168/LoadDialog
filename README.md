@@ -20,19 +20,14 @@ dependencies {
 }
 </code></pre>
 
-## 三.使用：
-![](https://github.com/alijiahua/LoadDialog/blob/master/img/loadiing.jpg)
+## 三.预览：
+![](https://github.com/alijiahua/LoadDialog/blob/master/img/img.gif)
 
 ## 四.使用：
-<pre><code>
-
-        LoadDialog loadDialog=new LoadDialog(MainActivity.this);
+    LoadDialog loadDialog=new LoadDialog(MainActivity.this);
                       loadDialog.ShowText(); //是否显示加载中字体（默认不显示）
                       loadDialog.SetText("努力加载中…");  //自定义字体
                       loadDialog.show();
-
-
-</code></pre>
 
 
 ## 五.CSDN博客地址：http://blog.csdn.net/alijiahua
