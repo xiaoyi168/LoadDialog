@@ -13,12 +13,15 @@
         android:padding="10dp"
         >
 
-        <ImageView
+        <ProgressBar
             android:id="@+id/id_img"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:src="@drawable/loading_img"
-            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:indeterminateBehavior="repeat"
+            android:indeterminateDrawable="@drawable/loading_drawable"
+            android:indeterminateOnly="true"
+            android:layout_centerInParent="true"
             />
         <TextView
             android:text="加载中"

@@ -27,8 +27,6 @@ public class LoadDialog extends Dialog{
         setContentView(R.layout.dialog);
      /*   Window window = getWindow();
         window.setBackgroundDrawableResource(R.drawable.corners_radio);*/
-        ImageView img= (ImageView)findViewById(R.id.id_img);
-        Rotate(img);
         mTextView = (TextView)findViewById(R.id.id_text);
 
 
