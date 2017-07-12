@@ -16,7 +16,7 @@
 ## 二.其次在dependencies中添加：
 <pre><code>
 dependencies {
-     compile 'com.github.alijiahua:LoadDialog:1.1'
+     compile 'com.github.alijiahua:LoadDialog:1.6'
 }
 </code></pre>
 
