@@ -30,6 +30,5 @@ dependencies {
                       loadDialog.show();
 
 
-## 五.CSDN博客地址：http://blog.csdn.net/alijiahua
 
 
