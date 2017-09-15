@@ -18,8 +18,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 LoadDialog loadDialog=new LoadDialog(MainActivity.this);
-                loadDialog.ShowText(); //是否显示加载中字体（默认不显示）
-                loadDialog.SetText("努力加载中…");  //自定义字体
+               // loadDialog.ShowText(); //是否显示加载中字体（默认不显示）
+                //loadDialog.SetText("努力加载中…");  //自定义字体
                 loadDialog.show();
 
             }

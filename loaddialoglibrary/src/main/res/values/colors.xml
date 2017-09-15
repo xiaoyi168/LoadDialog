@@ -2,5 +2,5 @@
 <resources>
     <color name="white">#FFFFFF</color>
     <color name="transparent">#00000000</color>
-    <color name="bg">#50ffffff</color>
+    <color name="bg">#20000000</color>
 </resources>

@@ -11,7 +11,7 @@
         <!--是否浮现在activity之上-->
         <item name="android:windowIsFloating">true</item>
         <!--是否模糊-->
-        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:backgroundDimEnabled">true</item>
     </style>
 
 </resources>

@@ -25,8 +25,8 @@ public class LoadDialog extends Dialog{
     public LoadDialog(@NonNull Context context) {
         super(context,R.style.MyDialog);
         setContentView(R.layout.dialog);
-     /*   Window window = getWindow();
-        window.setBackgroundDrawableResource(R.drawable.corners_radio);*/
+        Window window = getWindow();
+        window.setBackgroundDrawableResource(R.drawable.corners_radio);
         mTextView = (TextView)findViewById(R.id.id_text);
 
 
