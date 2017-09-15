@@ -1,7 +1,7 @@
 <resources>
 
 
-    <style name="MyDialog" parent="android:style/Theme.Dialog">
+    <style name="LoadDialogStyle" parent="android:style/Theme.Dialog">
         <!--背景颜色及和透明程度-->
         <item name="android:windowBackground">@android:color/transparent</item>
         <!--是否去除标题 -->
