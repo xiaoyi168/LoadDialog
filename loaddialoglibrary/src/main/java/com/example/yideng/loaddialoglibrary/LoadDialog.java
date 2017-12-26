@@ -4,7 +4,6 @@ import android.app.Dialog;
 import android.content.Context;
 import android.support.annotation.NonNull;
 import android.view.View;
-import android.view.Window;
 import android.view.animation.Animation;
 import android.view.animation.LinearInterpolator;
 import android.view.animation.RotateAnimation;
@@ -25,11 +24,16 @@ public class LoadDialog extends Dialog{
     public LoadDialog(@NonNull Context context) {
         super(context,R.style.LoadDialogStyle);
         setContentView(R.layout.dialog);
-      /*  Window window = getWindow();
-        window.setBackgroundDrawableResource(R.drawable.corners_radio);*/
         mTextView = (TextView)findViewById(R.id.id_text);
 
 
+    }
+
+    /**
+     * 设置为空，方式内存泄漏
+     */
+    public static void setTextViewNull(){
+        mTextView=null;
     }
 
 

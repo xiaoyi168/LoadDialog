@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
                 //loadDialog.SetText("努力加载中…");  //自定义字体
                 loadDialog.show();
 
+
             }
         });
 
