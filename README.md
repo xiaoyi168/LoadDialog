@@ -16,7 +16,7 @@
 ## 二.其次在dependencies中添加：
 <pre><code>
 dependencies {
-      compile 'com.github.lmiot:LoadDialog:V1.9'
+          compile 'com.github.lmiot:LoadDialog:V2.0'
 }
 </code></pre>
 
@@ -24,10 +24,10 @@ dependencies {
 ![](https://github.com/alijiahua/LoadDialog/blob/master/img/img.gif)
 
 ## 四.使用：
-    LoadDialog loadDialog=new LoadDialog(MainActivity.this);
-                      loadDialog.ShowText(); //是否显示加载中字体（默认不显示）
-                      loadDialog.SetText("努力加载中…");  //自定义字体
-                      loadDialog.show();
+       LmiotDialog.show(MainActivity.this);//没有文字提示
+       LmiotDialog.show(MainActivity.this,"加载中…");//有文字提示
+       LmiotDialog.hidden(); //隐藏对话框
+
 
 
 

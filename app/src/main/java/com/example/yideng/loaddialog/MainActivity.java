@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
+import com.example.yideng.loaddialoglibrary.LmiotDialog;
 import com.example.yideng.loaddialoglibrary.LoadDialog;
 
 public class MainActivity extends AppCompatActivity {
@@ -17,10 +18,15 @@ public class MainActivity extends AppCompatActivity {
         textView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                LoadDialog loadDialog=new LoadDialog(MainActivity.this);
+            /*    LoadDialog loadDialog=new LoadDialog(MainActivity.this);
                // loadDialog.ShowText(); //是否显示加载中字体（默认不显示）
                 //loadDialog.SetText("努力加载中…");  //自定义字体
                 loadDialog.show();
+*/
+
+
+                LmiotDialog.hidden();
+               // LmiotDialog.show(MainActivity.this);
 
 
             }

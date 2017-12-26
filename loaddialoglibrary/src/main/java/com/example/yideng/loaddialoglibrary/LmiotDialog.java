@@ -2,7 +2,9 @@ package com.example.yideng.loaddialoglibrary;
 
 import android.app.Dialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.support.annotation.LayoutRes;
+import android.util.Log;
 import android.view.Gravity;
 import android.view.Window;
 import android.view.WindowManager;
@@ -23,7 +25,16 @@ public class LmiotDialog {
                 loadingDialog=null;
             }
             loadingDialog = new LoadDialog(context);
+
+            loadingDialog.setOnCancelListener(new DialogInterface.OnCancelListener() {
+                @Override
+                public void onCancel(DialogInterface dialogInterface) {
+                    hidden();
+                }
+            });
             loadingDialog.show();
+
+
         }
         catch (Exception e){
             e.printStackTrace();
@@ -37,6 +48,15 @@ public class LmiotDialog {
             }
             loadingDialog = new LoadDialog(context);
             loadingDialog.SetText(msg);
+
+
+            loadingDialog.setOnCancelListener(new DialogInterface.OnCancelListener() {
+                @Override
+                public void onCancel(DialogInterface dialogInterface) {
+                    hidden();
+                }
+            });
+
             loadingDialog.show();
         }
         catch (Exception e){
@@ -48,6 +68,8 @@ public class LmiotDialog {
     public static void hidden(){
         try {
 
+
+            Log.d("LmiotDialog", "销毁");
             if(loadingDialog!=null){
                 loadingDialog.dismiss();
                 loadingDialog.setTextViewNull();
