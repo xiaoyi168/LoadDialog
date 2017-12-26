@@ -16,7 +16,7 @@
 ## 二.其次在dependencies中添加：
 <pre><code>
 dependencies {
-          compile 'com.github.lmiot:LoadDialog:V2.0'
+          compile 'com.github.lmiot:LoadDialog:V2.1'
 }
 </code></pre>
 
@@ -27,6 +27,8 @@ dependencies {
        LmiotDialog.show(MainActivity.this);//没有文字提示
        LmiotDialog.show(MainActivity.this,"加载中…");//有文字提示
        LmiotDialog.hidden(); //隐藏对话框
+
+
 
 
 
